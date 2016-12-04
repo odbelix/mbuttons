@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />-->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-eval' 'unsafe-inline'; img-src 'self' data:">
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile.theme-1.4.5.css" />
+    <title>Botonera</title>
+</head>
+<body>
+    <div class="app">
+        <div data-role="page" id="code">
+            <header data-role="header">
+                <h1>Botonera</h1>
+            </header>
+            <div data-role="content">
+                <nav data-role="navbar">
+                  <ul>
+                    <li><a href="#code" class="ui-btn-active">Código</a></li>
+                    <li><a href="#question">Actividad</a></li>
+                    <li><a href="#about">Botonera</a></li>
+                  </ul>
+                </nav>
+            </div>
+            <footer data-role="footer">
+              <h4>Programa de Innovación Docente</h4>
+            </footer>
+        </div>
+        <div data-role="page" id="question">
+            <header data-role="header">
+                <h1>Botonera</h1>
+            </header>
+            <div data-role="content">
+              <nav data-role="navbar">
+                <ul>
+                  <li><a href="#code">Código</a></li>
+                  <li><a href="#question" class="ui-btn-active">Actividad</a></li>
+                  <li><a href="#about">Botonera</a></li>
+                </ul>
+              </nav>
+                This is thge content - Question
+            </div>
+            <footer data-role="footer">
+              <h4>Programa de Innovación Docente</h4>
+            </footer>
+        </div>
+        <div data-role="page" id="about">
+            <header data-role="header">
+                <h1>Sobre la Bonotera</h1>
+            </header>
+            <div data-role="content">
+              <nav data-role="navbar">
+                <ul>
+                  <li><a href="#code">Código</a></li>
+                  <li><a href="#question">Actividad</a></li>
+                  <li><a href="#about" class="ui-btn-active">Botonera</a></li>
+                </ul>
+              </nav>
+                The botonera project is a iniciative from VRDP
+            </div>
+            <footer data-role="footer">
+              <h4>Programa de Innovación Docente</h4>
+            </footer>
+        </div>
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <!--<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>-->
+    <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile-1.4.5.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
