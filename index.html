@@ -21,31 +21,28 @@
             <div data-role="content">
                 <nav data-role="navbar">
                   <ul>
-                    <li><a href="#code" class="ui-btn-active">Código</a></li>
-                    <li><a href="#question">Actividad</a></li>
                     <li><a href="#about">Botonera</a></li>
                   </ul>
                 </nav>
+                <div id="codeform">
+                  <input type="text" value="340625" name="classroomcode" id="classroomcode">
+                  <input type="button" class="btn btn-active" value="Ingresar" name="bclassroomcode" id="bclassroomcode" onclick="getQuestion();">
+                </div>
+                <div id="message" style="display:none;">
+                </div>
+                <div id="questioncontent">
+                </div>
+                <div id="sendanswer">
+                  <button type="button" id="sendbutton" style="display:none;" onclick="submitAnswer()" >Responder</button>
+                </div>
+                <div stype="display:none;" id="dataforanswer">
+                  <input  type="hidden" value="" id="question">
+                  <input  type="hidden" value="" id="option">
+                  <input  type="hidden" value="" id="user">
+                  <input  type="hidden" value="" id="iscorrect">
+                </div>
             </div>
-            <footer data-role="footer">
-              <h4>Programa de Innovación Docente</h4>
-            </footer>
-        </div>
-        <div data-role="page" id="question">
-            <header data-role="header">
-                <h1>Botonera</h1>
-            </header>
-            <div data-role="content">
-              <nav data-role="navbar">
-                <ul>
-                  <li><a href="#code">Código</a></li>
-                  <li><a href="#question" class="ui-btn-active">Actividad</a></li>
-                  <li><a href="#about">Botonera</a></li>
-                </ul>
-              </nav>
-                This is thge content - Question
-            </div>
-            <footer data-role="footer">
+            <footer data-role="footer" data-position="fixed">
               <h4>Programa de Innovación Docente</h4>
             </footer>
         </div>
@@ -63,7 +60,7 @@
               </nav>
                 The botonera project is a iniciative from VRDP
             </div>
-            <footer data-role="footer">
+            <footer data-role="footer" data-position="fixed">
               <h4>Programa de Innovación Docente</h4>
             </footer>
         </div>
